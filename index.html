@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet"> 
+    <title>Musikupload für den Krachmacher</title>
+    <meta charset="UTF-8">
+<style type="text/css">
+  html {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+</style>
+</head>
+
+
+
+<body>
+
+
+
+<h1>1. Upload der Audio-Dateien</h1><br>
+<h3>Das ist der Uploader um Musik auf die Hörspielbox zu kopieren. Nutze dafür einfach den Dateien hochladen-Knopf und lade Dateien hoch. Das wars. Den Rest erledigt mein Skript. Verlasse deswegen nicht sofort die Seite, wenn du die Dateien hochgeladen hast, sondern warte bis du Rückmeldung bekommst. Beachte auch, dass nur MP3-Dateien hochgeladen werden können. Wenn du keine MP3-Dateien hast, werwende bitte einen Konvertierer.</h3><br>
+<br> <br>
+<h3 style="color: red">UMLAUTE MÜSSEN UNBEDINGT IN ZWEI BUCHSTABEN UMBENANNT WERDEN. (Ä -> AE, ...)<br>AUCH SONDERZEICHEN WIE ' oder " MÜSSEN ERSETZT WERDEN. AM BESTEN DURCH LEERZEICHEN ODER UNTERSTRICHE!</h3>
+Manchmal dauert der Upload und das zusammenfügen ein wenig länger. Einfach so lange laufen lassen, bis "Fertig." angezeicht wird. DAS FENSTER NICHT SCHLIEßEN BIS ETWAS NEUES (wie. z.B. "Fehler" oder "Fertig") ANGEZEIGT WIRD.
+<form action="upload.php" method="POST" enctype="multipart/form-data">
+ <input type="file" name="file[]" multiple>
+
+ <input type="submit" name="submit" value="Hochladen">
+</form>
+</body>
+</html>
