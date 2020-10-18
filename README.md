@@ -13,6 +13,8 @@ First Download apache2 and php
 sudo apt-get install apache2 php ffmpeg
 ```
 
+Then you have to activate file_uploads in php-settings or it won't work.
+
 ## Attention
 In the PHP-File in line 33: This is just the standard apache2 path. When you have your own path you have to adjust this.
 Also in both shell scripts there just standard paths I thought they're good. You can edit it for yourself.
